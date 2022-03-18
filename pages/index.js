@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AvisoBoleto from "../src/components/AvisoBoleto";
 import Component from "../src/components/Component";
 import styles from "../src/styles/Home.module.css";
 
@@ -11,9 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Next.js!</h1>
+      <main className={styles.main}>      
         <Component />
+        <AvisoBoleto />
       </main>
 
       <footer className={styles.footer}>
