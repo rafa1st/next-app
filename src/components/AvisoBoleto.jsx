@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PrintAviso from "./PrintAviso";
 
 export default function AvisoBoleto() {
   const [boleto, setBoleto] = useState({
@@ -13,6 +14,7 @@ export default function AvisoBoleto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
   };
 
   const handleChange = (e) => {
@@ -96,6 +98,7 @@ export default function AvisoBoleto() {
         <br />
         <input type="submit" />
       </form>
+      <PrintAviso name={boleto}/>
     </div>
   );
 }

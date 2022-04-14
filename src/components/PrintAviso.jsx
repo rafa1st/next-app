@@ -1,9 +1,12 @@
 //import { useState } from "react";
 
-export default function PrintAviso() {
+export default function PrintAviso(props) {
+  
+
   return (
     <div>
-      <h1>Exemplo</h1>
+      <h1>printAviso</h1>
+      <p>{}</p>
     </div>
   );
 }
